@@ -15,7 +15,7 @@ def load_data(stock_symbol):
 
 ## Machine Learning Models
 
-At its core, machine learning involves training a model on a sample dataset to identify relationships between the target variable (the variable you aim to predict) and other variables using algorithms such as regression or neural networks. Here we use the XGBRegressor alogithm and define the closing price as the target variable. 
+At its core, machine learning involves training a model on a sample dataset to identify relationships between the target variable (the variable you aim to predict) and other variables using algorithms such as regression or neural networks. Here, we use `XGBRegressor`, which implements a gradient boosting algorithm, and define the closing price as the target variable.
 
 ```python
 xg_reg = xgb.XGBRegressor(objective='reg:squarederror', n_estimators=100)
